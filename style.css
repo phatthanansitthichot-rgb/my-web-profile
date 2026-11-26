@@ -1,41 +1,79 @@
-/* ภารกิจที่ 2: จัดสไตล์ <body> */
+
+/* ภารกิจที่ 2: จัดสไตล์ BODY */
 body {
-  background-color: papayawhip
-  font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #fdf2e9, #f5d6bd);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
 }
 
-/* ภารกิจที่ 3: จัดสไตล์ .card */
+/* ภารกิจที่ 3: จัดสไตล์ CARD */
 .card {
-  width: 300px;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
+    width: 300px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 10px 30px rgba(100, 60, 30, 0.15);
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
 
-/* ภารกิจที่ 4: จัดสไตล์รูปภาพ <img> */
+/* เอฟเฟกต์เมื่อเอาเมาส์ไปชี้ */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(100, 60, 30, 0.25);
+}
+
+/* ภารกิจที่ 4: จัดสไตล์รูปภาพ */
 .card img {
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 15px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    border: 5px solid #f3d5bd;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* ภารกิจที่ 5: จัดสไตล์ชื่อ #profile-name */
+/* ภารกิจที่ 5: จัดสไตล์ชื่อ */
 #profile-name {
-  color: #333333;
-  text-align: center;
+    color: #754c24;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-/* ภารกิจที่ 6: จัดสไตล์ .bio */
+/* ภารกิจที่ 6: จัดสไตล์ BIO */
 .bio {
-  color: #666666;
-  font-size: 14px;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
-/* ภารกิจที่ 7: จัดสไตล์ <ul> */
+/* ภารกิจที่ 7: จัดสไตล์ UL */
 ul {
-  list-style-type: none;
-  padding-left: 0;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 15px 0 0;
+}
+
+ul li {
+    background-color: #fff5ed;
+    color: #805b3b;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    background-color: #f3d5bd;
+    transform: scale(1.03);
 }
