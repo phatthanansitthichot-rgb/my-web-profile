@@ -10,7 +10,7 @@ body {
 
 /* ภารกิจที่ 3: จัดสไตล์ CARD */
 .card {
-    width: 300px;
+    width: 440px;
     background-color: #ffffff;
     border: none;
     box-shadow: 0 10px 30px rgba(100, 60, 30, 0.15);
